@@ -6,6 +6,7 @@ const KEYS = [
   "timetable",
   "assignments",
   "marks",
+  "feedback",
   "login",
   "captcha",
   "autoSemester",
@@ -30,4 +31,21 @@ document.querySelector("#clear").addEventListener("click", async () => {
   await chrome.storage.local.clear();
   if (settings) await chrome.storage.local.set({ settings });
   status.textContent = "Cleared. Reload VTOP to start fresh.";
+});
+
+const feedbackStatus = document.querySelector("#feedbackStatus");
+document.querySelector("#feedbackStart").addEventListener("click", async () => {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  const message = {
+    type: "vx-feedback-start",
+    rating: Number(document.querySelector("#feedbackRating").value),
+  };
+  try {
+    const reply = await chrome.tabs.sendMessage(tab.id, message);
+    feedbackStatus.textContent = reply?.text ?? "Open the course feedback list first.";
+    feedbackStatus.className = reply?.ok ? "ok" : "problem";
+  } catch {
+    feedbackStatus.textContent = "Open the course feedback list on VTOP first, then press Start.";
+    feedbackStatus.className = "problem";
+  }
 });

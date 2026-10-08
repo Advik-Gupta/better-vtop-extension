@@ -8,6 +8,24 @@
   <body>
     <header>Better VTOP</header>
     <main>
+      <section class="feedback">
+        <strong>Course feedback</strong>
+        <small
+          >Open the feedback list, then start. Every outcome gets this rating and each form is
+          submitted.</small
+        >
+        <div class="feedback-controls">
+          <select id="feedbackRating" aria-label="Rating">
+            <option value="5">5 stars</option>
+            <option value="4">4 stars</option>
+            <option value="3">3 stars</option>
+            <option value="2">2 stars</option>
+            <option value="1">1 star</option>
+          </select>
+          <button type="button" id="feedbackStart">▶ Start filling</button>
+        </div>
+        <p id="feedbackStatus" role="status"></p>
+      </section>
       <label class="row">
         <input type="checkbox" id="attendance" />
         <span>
@@ -56,6 +74,13 @@
           <small
             >Marks lost and what is still possible, and where you fell in each grade range.</small
           >
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="feedback" />
+        <span>
+          <strong>Course feedback filler</strong>
+          <small>Offers to rate and submit pending course feedback for you.</small>
         </span>
       </label>
       <label class="row">

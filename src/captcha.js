@@ -29,7 +29,7 @@ const VXCaptcha = (() => {
       const r = pixels[i * 4];
       const g = pixels[i * 4 + 1];
       const b = pixels[i * 4 + 2];
-      mask[i] = r - Math.max(g, b) > 50 ? 1 : 0;
+      mask[i] = Math.max(r - Math.max(g, b), b - Math.max(r, g)) > 50 ? 1 : 0;
     }
     return mask;
   }
@@ -166,10 +166,17 @@ const VXCaptcha = (() => {
 
   const captchaImage = () =>
     document.querySelector("#captchaBlock img") ??
-    document.querySelector("#vtopLoginForm img[src^='data:image']");
+    document.querySelector("#vtopLoginForm img[src^='data:image']") ??
+    document.querySelector("#captcha_id");
 
   const captchaInput = () =>
-    document.querySelector("#captchaStr") ?? document.querySelector("input[name='captchaStr']");
+    document.querySelector("#captchaStr") ??
+    document.querySelector("input[name='captchaStr']") ??
+    document.querySelector("#captchaString");
+
+  const signedIn = () =>
+    Boolean(document.querySelector("#vtop-header #vtopHeaderBarControl")) ||
+    (location.pathname.startsWith("/endfeedback") && !captchaInput());
 
   function remember() {
     const input = captchaInput();
@@ -214,7 +221,7 @@ const VXCaptcha = (() => {
   }
 
   function scan() {
-    if (!document.querySelector("#vtop-header #vtopHeaderBarControl")) return fill();
+    if (!signedIn()) return fill();
     if (pendingChecked) return;
     pendingChecked = true;
     learn();
