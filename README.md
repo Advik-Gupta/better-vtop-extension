@@ -8,8 +8,6 @@ Everything runs in your browser on top of your own signed-in VTOP session. The e
 
 | Page                              | What Better VTOP does                                                                                                                                                                                                                     |
 | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Login                             | Adds links to the CDC internship tracker and the Better VTOP app under the sign-in box.                                                                                                                                                   |
-| Top bar                           | Replaces the icons, Quick Links and Campus Etiquette button with links to Home, Attendance, Marks and Digital Assignments, and puts Sign out on the bar.                                                                                  |
 | Home                              | Shows courses with attendance, forthcoming digital assignments, and the CGPA card (optional). Hides the action plan, club events and feedback list. Restyles Spot-light. A button works out how many classes you can miss in each course. |
 | Class Attendance                  | Replaces the table with a planner: classes left and classes you can miss before each exam, an exam by exam view, the full day by day record, and your own marks for planned absences and pending on-duty.                                 |
 | Time Table                        | Draws your week with only your own classes, and lists registered courses with credits spelt out and a Contact button for each teacher.                                                                                                    |
@@ -50,3 +48,25 @@ VTOP checks attendance when each exam starts and rounds the percentage up, so 74
 ## Disclaimer
 
 Better VTOP is an independent student project. It is not affiliated with or endorsed by VIT.
+
+## Made with ❤️ by
+
+<table>
+<tr align="center">
+<td>
+	<p align="center">
+		<img src="https://github.com/Advik-Gupta.png" width="170" height="170" alt="Advik Gupta" style="border: 2px solid grey; border-radius: 50%;">
+	</p>
+	<p style="font-size:17px; font-weight:600;">Advik Gupta</p>
+	<p align="center">
+		<a href="https://github.com/Advik-Gupta">
+			<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+		</a>
+	</p>
+</td>
+</tr>
+</table>
+
+#### AI Disclosure
+
+This project was developed with AI assistance. Claude was used to help with page parsing, the attendance planning logic, interface design, and general development support. All final decisions, integration, and project direction were made by the author.
