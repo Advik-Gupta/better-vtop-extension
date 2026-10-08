@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Better VTOP",
+  "version": "1.0.0",
+  "description": "A cleaner, more useful VTOP for VIT students: attendance planner, tidy home page, assignment due dates, a readable timetable and faculty search with photos.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["storage"],
+  "action": { "default_title": "Better VTOP", "default_popup": "popup/popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://vtop.vit.ac.in/vtop", "https://vtop.vit.ac.in/vtop/*"],
+      "js": [
+        "src/engine.js",
+        "src/dom.js",
+        "src/parsers.js",
+        "src/semester.js",
+        "src/vtop.js",
+        "src/planner.js",
+        "src/attendance.js",
+        "src/home.js",
+        "src/faculty.js",
+        "src/timetable.js",
+        "src/header.js",
+        "src/assignments.js",
+        "src/login.js"
+      ],
+      "css": ["src/attendance.css", "src/home.css", "src/timetable.css", "src/header.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

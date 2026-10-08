@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Better VTOP</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>Better VTOP</header>
+    <main>
+      <label class="row">
+        <input type="checkbox" id="attendance" />
+        <span>
+          <strong>Attendance planner</strong>
+          <small>Replaces the table on Academics › Attendance.</small>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="home" />
+        <span>
+          <strong>Cleaner home page</strong>
+          <small>Courses, attendance and assignments first.</small>
+        </span>
+      </label>
+      <label class="row sub">
+        <input type="checkbox" id="homeCgpa" />
+        <span>
+          <strong>Show CGPA on the home page</strong>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="header" />
+        <span>
+          <strong>Simpler top bar</strong>
+          <small>Home, Attendance, Marks, Digital Assignments and Sign out.</small>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="timetable" />
+        <span>
+          <strong>Cleaner timetable and faculty pages</strong>
+          <small>Your week at a glance, and a Contact button for each teacher.</small>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="assignments" />
+        <span>
+          <strong>Assignment due dates</strong>
+          <small>Each course's next due date on the Digital Assignment page.</small>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="login" />
+        <span>
+          <strong>Links on the login page</strong>
+          <small>The internship tracker and the Better VTOP app.</small>
+        </span>
+      </label>
+      <label class="row">
+        <input type="checkbox" id="autoSemester" />
+        <span>
+          <strong>Pick the current semester for me</strong>
+          <small>In the semester dropdown on attendance, marks, timetable and similar pages.</small>
+        </span>
+      </label>
+      <button id="clear">Clear saved plans and cached data</button>
+      <p id="status" role="status"></p>
+      <p class="note">
+        Everything is worked out from your own VTOP session and kept on this device. Nothing is sent
+        anywhere else.
+      </p>
+      <p class="note" id="version"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+.vx-home {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 12px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+.vx-back {
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0 0 8px;
+  padding: 0 12px;
+  text-align: right;
+}
+.vx-home .vx-toolbar {
+  margin-bottom: 8px;
+}
+.vx-home .vx-title {
+  font-size: 15px;
+}
+.vx-check {
+  color: var(--vx-text) !important;
+  cursor: pointer;
+}
+.vx-check input {
+  margin: 0;
+}
+
+.vx-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 10px;
+}
+.vx-home-side {
+  display: grid;
+  gap: 10px;
+}
+
+.vx-card {
+  padding: 8px 12px 10px;
+  border: 1px solid var(--vx-line);
+  border-top: 3px solid var(--vx-blue);
+  border-radius: 3px;
+  background: #fff;
+}
+.vx-card h3 {
+  margin: 0 0 6px;
+  color: var(--vx-blue-dark);
+  font-size: 14px;
+  font-weight: 600;
+}
+.vx-home .vx-table th {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.vx-home .vx-table td {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+.vx-home .vx-pill {
+  padding: 0 7px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.vx-home .vx-table .vx-sub {
+  display: inline;
+  margin-left: 4px;
+  font-size: 11px;
+}
+
+.vx-att {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.vx-att strong {
+  min-width: 38px;
+  font-size: 14px;
+}
+.vx-att .vx-bar {
+  width: 110px;
+  margin: 0;
+}
+
+.vx-calc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin-top: 8px;
+}
+.vx-home .vx-btn {
+  height: 28px;
+  font-size: 12.5px;
+}
+.vx-empty {
+  margin: 0;
+  color: var(--vx-muted);
+}
+
+.vx-da-list {
+  max-height: 300px;
+  border: 0;
+}
+.vx-da-list li {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+}
+.vx-da-list li.vx-clickable {
+  cursor: pointer;
+}
+.vx-da-list li.vx-clickable:hover {
+  background: var(--vx-soft);
+}
+.vx-due {
+  flex: 0 0 72px;
+  padding-left: 8px;
+  border-left: 3px solid currentColor;
+  line-height: 1.25;
+}
+.vx-due strong {
+  display: block;
+  color: var(--vx-text);
+}
+.vx-due span {
+  font-size: 11.5px;
+}
+.vx-da {
+  min-width: 0;
+}
+
+.vx-cgpa {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.vx-cgpa strong {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.vx-bar.vx-credit {
+  width: 100%;
+  margin: 8px 0 4px;
+  color: var(--vx-blue);
+}
+.vx-facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.vx-facts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+  border-top: 1px solid var(--vx-line);
+}
+.vx-facts li:first-child {
+  border-top: 0;
+}
+.vx-facts span {
+  color: var(--vx-muted);
+}
+
+.vx-home-spot {
+  padding: 8px 12px 12px;
+  border: 1px solid var(--vx-line);
+  border-top: 3px solid var(--vx-blue);
+  border-radius: 3px;
+  background: #fff;
+}
+.vx-home-spot > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+}
+.vx-home-spot .primaryBorderTop {
+  margin: 0 0 8px !important;
+  border: 0 !important;
+  color: var(--vx-blue-dark) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+.vx-home-spot .row {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 10px;
+  margin: 0 !important;
+}
+.vx-home-spot .row > .col {
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.vx-home-spot .card {
+  height: 100%;
+  border: 1px solid var(--vx-line) !important;
+  border-radius: 3px;
+  background: #fff;
+}
+.vx-home-spot .card-header {
+  padding: 5px 10px !important;
+  border-bottom: 1px solid var(--vx-line);
+  background: var(--vx-soft) !important;
+}
+.vx-home-spot .card-header .btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: var(--vx-text) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.vx-home-spot .card-header .btn:hover {
+  color: var(--vx-blue-dark) !important;
+  text-decoration: underline;
+}
+.vx-home-spot .card-header .badge {
+  margin-left: auto;
+  padding: 2px 7px;
+  background: var(--vx-blue) !important;
+  font-size: 11px;
+  font-weight: 600;
+}
+.vx-home-spot .card-body {
+  padding: 4px 10px 6px !important;
+}
+.vx-home-spot .list-group-item {
+  padding: 5px 0 !important;
+  border-color: var(--vx-line);
+  background: none !important;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.vx-home-spot .hightlight1 {
+  padding: 0 8px 0 0 !important;
+  color: var(--vx-blue);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.vx-home-spot .hightlight1 i {
+  color: inherit !important;
+}
+.vx-home-spot .list-group-item a,
+.vx-home-spot .list-group-item a span {
+  color: var(--vx-text) !important;
+}
+.vx-home-spot .list-group-item a:hover span {
+  color: var(--vx-blue-dark) !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .vx-home-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

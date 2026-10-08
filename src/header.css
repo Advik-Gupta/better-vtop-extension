@@ -1,0 +1,88 @@
+.vx-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  margin: 0 auto 0 14px;
+}
+.vx-nav button,
+.vx-signout {
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: none;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.vx-nav button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+.vx-nav button.vx-on {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 -3px 0 #fff;
+}
+.vx-nav button:focus-visible,
+.vx-signout:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+}
+.vx-signout {
+  margin-left: 10px;
+  border-color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+}
+.vx-signout:hover {
+  background: #fff;
+  color: #2f6594;
+}
+#vtop-header[data-vx] {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+#vtop-header[data-vx] > .container-fluid {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.vx-login-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0 0;
+}
+.vx-root a.vx-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--vx-line);
+  border-top: 3px solid var(--vx-blue);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--vx-text);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.vx-root a.vx-link-card:hover {
+  border-color: var(--vx-blue);
+  background: var(--vx-soft);
+}
+.vx-link-card strong {
+  color: var(--vx-blue-dark);
+  font-size: 15px;
+}
+.vx-link-card > span {
+  color: var(--vx-muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+@media (max-width: 560px) {
+  .vx-login-links {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
