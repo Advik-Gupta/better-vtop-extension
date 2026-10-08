@@ -5,7 +5,9 @@ const KEYS = [
   "header",
   "timetable",
   "assignments",
+  "marks",
   "login",
+  "captcha",
   "autoSemester",
 ];
 const status = document.querySelector("#status");
